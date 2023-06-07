@@ -5,9 +5,9 @@ handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
 
-if (/^e$/i.test(m.text) ) { //sem prefixo
+if (/^porno|pack|tetas|pene|tirar|pack1|pack2$/i.test(m.text) ) { //sem prefixo
     let teks = `
-${pickRandom([`Que bueno sabe la letra E`, `eeeeee`])}
+${pickRandom([`Herman@ consíguete una vida en vez de estar pidiendome q te mande webadas , buscate un novi@ `, `Das vergüenza herman@ pidiendo webadas a un bot`])}
 `.trim()
 conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
 
